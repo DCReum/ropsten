@@ -344,9 +344,9 @@ window.addEventListener("load", function() {
     WorkflowManager.createWorkflow = promiseCall(contract.createWorkflow);
     WorkflowManager.LogWorkflowCreation = promiseCall(contract.LogWorkflowCreation);
 
-    WorkflowManager.blockHref = blockNumber => `https://etherscan.io/block/${blockNumber}`;
-    WorkflowManager.transactionHref = hash => `https://etherscan.io/tx/${hash}`;
-    WorkflowManager.addressHref = address => `https://etherscan.io/address/${address}`;
+    WorkflowManager.blockHref = blockNumber => `https://ropsten.etherscan.io/block/${blockNumber}`;
+    WorkflowManager.transactionHref = hash => `https://ropsten.etherscan.io/tx/${hash}`;
+    WorkflowManager.addressHref = address => `https://ropsten.etherscan.io/address/${address}`;
   }
 });
 export { WorkflowManager, Workflow, Activity, Relation };
